@@ -126,3 +126,189 @@ header {
         text-align: center;
     }
 }
+/* logos section is implemented here  */
+
+.logos-section {
+    margin: 0px 120px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-top: 1px solid #e9e5e5;
+    border-bottom: 1px solid #dedede;
+}
+.logos-section div img {
+    cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+    .logos-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .logos-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.popular-text {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* Item section is implemented here  */
+.item-container {
+    margin: 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 40px;
+}
+.item {
+    width: 26.5%;
+    padding: 20px;
+    border: none;
+    box-shadow:
+    2px 0 5px rgba(0, 0, 0, 0.2),  /* Right shadow */
+    0 2px 5px rgba(0, 0, 0, 0.2),  /* Bottom shadow */
+    -2px 0 5px rgba(0, 0, 0, 0.2), /* Left shadow */
+    0 -2px 5px rgba(0, 0, 0, 0.2); /* Top shadow */
+    border-radius: 10px;
+}
+.item .image {
+    width: 100%;
+    cursor: pointer;
+}
+.item h1 {
+    cursor: pointer;
+}
+.seemore {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    right: 140px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+.seemore p {
+    padding-right: 5px;
+}
+/* setting item section's responsiveness for small devices  */
+@media screen and (max-width: 576px) {
+    .item-container {
+        flex-wrap: wrap;
+        margin: 0px 10px;
+        justify-content: space-between;
+    }
+    .item {
+        width: 45%;
+        
+    }
+    .item h1 {
+        font-size: medium;
+    }
+}
+/* setting item section's responsiveness for medium devices  */
+@media screen and (min-width: 576px) and (max-width:960px) {
+    .item-container {
+        flex-wrap: wrap;
+        margin: 0px 10px;
+        justify-content: space-between;
+    }
+    .item {
+        width: 30%;
+        
+    }
+    .item h1 {
+        font-size: medium;
+    }
+
+}
+/* join now section is implemented here  */
+.joinnow-section {
+    margin: 0px 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.joinnow-text {
+    width: 50%;
+}
+.joinnow-text p {
+    width: 100%;
+    padding: 15px 0px;
+}
+.joinnow-text .button2 button {
+    padding: 7px 15px;
+    background-color: #E02C6D;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: font-size 80ms linear, padding 80ms linear;
+}
+.joinnow-text .button2 button:hover {
+    font-size: large;
+    padding: 9px 19px;
+}
+/* setting Join now section's responsiveness for small devices  */
+@media screen and (max-width: 576px) {
+    .joinnow-section {
+        flex-direction: column;
+    }
+    .joinnow-text {
+        text-align: center;
+        width: 100%;
+    }
+    .joinnow-text h1 {
+       font-size: medium;
+       margin-top: 10px;
+    }
+}
+/* setting Join now section's responsiveness for small devices  */
+@media screen and (min-width: 576px) and (max-width:960px) {
+    .joinnow-section {
+        flex-direction: column;
+    }
+    .joinnow-text {
+        text-align: center;
+        width: 100%;
+    }
+    .joinnow-text h1 {
+       font-size: medium;
+       margin-top: 10px;
+    }
+}
+/* footer section is implemented here  */
+footer {
+    background: #0A0826;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+footer div {
+    margin-top: 50px;
+}
+footer p {
+    margin-top: 15px;
+}
+footer div img {
+    padding: 0px 10px;
+    cursor: pointer;
+    width: 60px;
+    transition: width 80ms linear;
+}
+footer div img:hover {
+    width: 52px;
+}
